@@ -96,6 +96,7 @@ public class ProductPage extends BaseClass {
 		boolean status=driver.findElement(By.xpath("//img[@src='img/Login_Bot_graphic.png']")).isDisplayed();
 		assertEquals(status, true);
 	}
+	//this is product page
 	
 	
 
