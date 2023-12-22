@@ -35,6 +35,7 @@ import io.cucumber.java.Scenario;
 public class BaseClass {
 
 	public static WebDriver driver;
+	public static WebDriverWait wait;
 	public static Properties prop;
 	static {
 		try {
@@ -78,7 +79,7 @@ public class BaseClass {
 	}
 
 	public void explicitwait(WebElement elm, String type) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		 wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
 		switch (type) {
 		case "visibilityof":
@@ -164,5 +165,11 @@ public class BaseClass {
 		}
 
 	}
+	public void explicitwaitForlist(List<WebElement>list) {
+		 wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+wait.until(ExpectedConditions.visibilityOfAllElements(list));
+		
+
+		}
 
 }

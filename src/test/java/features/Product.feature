@@ -36,3 +36,10 @@ Scenario: validate text in filter options
     When enter valid username "standard_user" and valid password "secret_sauce"
     And click on login button
     Then validate text of all option in filter dropdown
+    
+    @test
+Scenario: Verify presence of all menu elements
+    When enter valid username "standard_user" and valid password "secret_sauce"
+    And click on login button
+    And click on hamburger icon
+    Then validate presence of all item in menu

@@ -65,10 +65,36 @@ public class ProductPage extends BaseClass {
 			assertEquals(list.get(i).getText(), list2.get(i));
 		}
 	}
+	
 	public void validate_count_after_adding_two_elm() {
 		WebElement elm=driver.findElement(By.xpath("//span[@class='fa-layers-counter shopping_cart_badge']"));
 		
 		validateText(elm, "2");
+	}
+	public void click_on_hamburger_icon(){
+		WebElement elm=driver.findElement(By.xpath("//button[normalize-space()='Open Menu']"));
+		 clickonelement(elm);
+	}
+	public void validate_presence_of_element() {
+		List<WebElement>list=driver.findElements(By.xpath("//a[@class='bm-item menu-item']"));
+		explicitwaitForlist(list);
+		List<String>list2=new ArrayList<String>();
+		list2.add("All Items");
+		list2.add("About");
+		list2.add("Logout");
+		list2.add("Reset App State");
+		for(int i=0;i<list.size();i++) {
+			assertEquals(list.get(i).getText(),list2.get(i));
+		}
+	}
+	
+	public void click_on_Logout_btn() {
+		WebElement elm=driver.findElement(By.xpath("//a[@id='logout_sidebar_link']"));
+		clickonelement(elm);
+	}
+	public void validate_logout_succcessfully() {
+		boolean status=driver.findElement(By.xpath("//img[@src='img/Login_Bot_graphic.png']")).isDisplayed();
+		assertEquals(status, true);
 	}
 	
 	

@@ -20,6 +20,11 @@ public void click_on_basket() throws InterruptedException {
 public void click_on_checkout() throws InterruptedException{
    pp.clickOnCheckout();
 }
+@When("click on hamburger icon")
+public void click_on_hamburger_icon(){
+ pp.click_on_hamburger_icon();
+}
+
 @When("click on filter dropdown")
 public void click_on_filter_dropdown() {
 	pp.click_on_filter_dropdown();
@@ -27,6 +32,11 @@ public void click_on_filter_dropdown() {
 @When("Add two item on basket")
 public void add_two_item_on_basket() {
 	pp.add_two_item_on_basket();
+}
+
+@When("click on logout button")
+public void click_on_logout_button() {
+	pp.click_on_Logout_btn();
 }
 @Then("validate text")
 public void validate_checkout_text(){
@@ -49,8 +59,15 @@ public void validate_option_text() {
 public void validate_count_after_adding_two_elm() {
 	pp.validate_count_after_adding_two_elm();
 }
+@Then("validate presence of all item in menu")
+public void validate_presence_of_element() {
+	pp.validate_presence_of_element();
+}
 
-
+@Then("validate logout successfully")
+public void validate_logout_succcessfully() {
+	pp.validate_logout_succcessfully();
+}
 
 
 
