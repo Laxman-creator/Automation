@@ -1,6 +1,6 @@
 package helper;
 
-import static org.testng.Assert.assertEquals;
+
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -27,6 +27,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -122,12 +123,12 @@ public class BaseClass {
 
     public void validateText(WebElement ele, String expectedText) {
         String actualText = ele.getText();
-        assertEquals(actualText, expectedText);
+        Assert.assertEquals(actualText, expectedText);
     }
 
     public void validateSizeOfList(List<WebElement> list, int size) {
         int sizeOflist = list.size();
-        assertEquals(sizeOflist, size);
+        Assert.assertEquals(sizeOflist, size);
     }
 
     @After
