@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Laxman pipaliya\AppData\Local\Temp\testng-eclipse--1684113784\testng-customsuite.xml</span>
+                    <span>C:\Users\Laxman pipaliya\AppData\Local\Temp\testng-eclipse--737316704\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods,   11 passed</span>
+                    <span class="method-stats">11 methods, 1 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="cucumber.options.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;checkout functionality with valid details&quot;, &quot;verify checkout functionality&quot;)">runScenario("checkout functionality with valid details", "verify checkout functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +117,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="cucumber.options.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;checkout functionality by giving only fisrtname and zipcode&quot;, &quot;verify checkout functionality&quot;)">runScenario("checkout functionality by giving only fisrtname and zipcode", "verify checkout functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="cucumber.options.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;checkout functionality by giving only fisrtname and lastname&quot;, &quot;verify checkout functionality&quot;)">runScenario("checkout functionality by giving only fisrtname and lastname", "verify checkout functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="cucumber.options.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate size of list in filter&quot;, &quot;Add to cart functionality&quot;)">runScenario("validate size of list in filter", "Add to cart functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="cucumber.options.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;checkout functionality by giving only fisrtname and zipcode&quot;, &quot;verify checkout functionality&quot;)">runScenario("checkout functionality by giving only fisrtname and zipcode", "verify checkout functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -114,16 +143,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="cucumber.options.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate text in filter options&quot;, &quot;Add to cart functionality&quot;)">runScenario("validate text in filter options", "Add to cart functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="cucumber.options.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;checkout functionality by giving only fisrtname and zipcode&quot;, &quot;verify checkout functionality&quot;)">runScenario("checkout functionality by giving only fisrtname and zipcode", "verify checkout functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="cucumber.options.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;checkout functionality by giving only fisrtname and zipcode&quot;, &quot;verify checkout functionality&quot;)">runScenario("checkout functionality by giving only fisrtname and zipcode", "verify checkout functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -143,17 +162,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="cucumber.options.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;checkout functionality with valid details&quot;, &quot;verify checkout functionality&quot;)">runScenario("checkout functionality with valid details", "verify checkout functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="cucumber.options.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;add product on cart&quot;, &quot;Add to cart functionality&quot;)">runScenario("add product on cart", "Add to cart functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="cucumber.options.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate size of list in filter&quot;, &quot;Add to cart functionality&quot;)">runScenario("validate size of list in filter", "Add to cart functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -168,6 +177,37 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">cucumber.options.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;checkout functionality with valid details&quot;, &quot;verify checkout functionality&quot;)">
+                  </a> <!-- runScenario("checkout functionality with valid details", "verify checkout functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("checkout functionality with valid details","verify checkout functionality")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [THANK YOU FOR YOUR ORDE] but found [THANK YOU FOR YOUR ORDER]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at helper.BaseClass.validateText(BaseClass.java:126)
+	at page.CheckOutPage.validatetext(CheckOutPage.java:33)
+	at stepDefination.CheckoutStep.validate_text(CheckoutStep.java:27)
+	at ✽.validate checkout text(file:///D:/java%20eclipse/com.sharkNinja/src/test/java/features/CheckOut.feature:14)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -176,10 +216,40 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;checkout functionality by giving only fisrtname and zipcode&quot;, &quot;verify checkout functionality&quot;)">
+                  </a> <!-- runScenario("checkout functionality by giving only fisrtname and zipcode", "verify checkout functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("checkout functionality by giving only fisrtname and zipcode","verify checkout functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;checkout functionality by giving only fisrtname and lastname&quot;, &quot;verify checkout functionality&quot;)">
                   </a> <!-- runScenario("checkout functionality by giving only fisrtname and lastname", "verify checkout functionality") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("checkout functionality by giving only fisrtname and lastname","verify checkout functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate size of list in filter&quot;, &quot;Add to cart functionality&quot;)">
+                  </a> <!-- runScenario("validate size of list in filter", "Add to cart functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate size of list in filter","Add to cart functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;checkout functionality by giving only fisrtname and zipcode&quot;, &quot;verify checkout functionality&quot;)">
+                  </a> <!-- runScenario("checkout functionality by giving only fisrtname and zipcode", "verify checkout functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("checkout functionality by giving only fisrtname and zipcode","verify checkout functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -200,26 +270,6 @@
                   </a> <!-- runScenario("validate text in filter options", "Add to cart functionality") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("validate text in filter options","Add to cart functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;checkout functionality by giving only fisrtname and zipcode&quot;, &quot;verify checkout functionality&quot;)">
-                  </a> <!-- runScenario("checkout functionality by giving only fisrtname and zipcode", "verify checkout functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("checkout functionality by giving only fisrtname and zipcode","verify checkout functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;checkout functionality by giving only fisrtname and zipcode&quot;, &quot;verify checkout functionality&quot;)">
-                  </a> <!-- runScenario("checkout functionality by giving only fisrtname and zipcode", "verify checkout functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("checkout functionality by giving only fisrtname and zipcode","verify checkout functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -256,30 +306,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;checkout functionality with valid details&quot;, &quot;verify checkout functionality&quot;)">
-                  </a> <!-- runScenario("checkout functionality with valid details", "verify checkout functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("checkout functionality with valid details","verify checkout functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="runScenario(&quot;add product on cart&quot;, &quot;Add to cart functionality&quot;)">
                   </a> <!-- runScenario("add product on cart", "Add to cart functionality") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("add product on cart","Add to cart functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;validate size of list in filter&quot;, &quot;Add to cart functionality&quot;)">
-                  </a> <!-- runScenario("validate size of list in filter", "Add to cart functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("validate size of list in filter","Add to cart functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -289,7 +319,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Laxman pipaliya\AppData\Local\Temp\testng-eclipse--1684113784\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Laxman pipaliya\AppData\Local\Temp\testng-eclipse--737316704\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -350,52 +380,52 @@ data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'cucumber.options.TestRunner')
-data.setCell(0, 3, 16106);
+data.setCell(0, 3, 7345);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'cucumber.options.TestRunner')
-data.setCell(1, 3, 7649);
+data.setCell(1, 3, 5990);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'cucumber.options.TestRunner')
-data.setCell(2, 3, 7403);
+data.setCell(2, 3, 5861);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'cucumber.options.TestRunner')
-data.setCell(3, 3, 6918);
+data.setCell(3, 3, 5823);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'cucumber.options.TestRunner')
-data.setCell(4, 3, 6895);
+data.setCell(4, 3, 5693);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'cucumber.options.TestRunner')
-data.setCell(5, 3, 5908);
+data.setCell(5, 3, 5577);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'runScenario')
 data.setCell(6, 2, 'cucumber.options.TestRunner')
-data.setCell(6, 3, 3071);
+data.setCell(6, 3, 2596);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'runScenario')
 data.setCell(7, 2, 'cucumber.options.TestRunner')
-data.setCell(7, 3, 2934);
+data.setCell(7, 3, 2370);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'runScenario')
 data.setCell(8, 2, 'cucumber.options.TestRunner')
-data.setCell(8, 3, 2737);
+data.setCell(8, 3, 2343);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'runScenario')
 data.setCell(9, 2, 'cucumber.options.TestRunner')
-data.setCell(9, 3, 2640);
+data.setCell(9, 3, 2159);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'runScenario')
 data.setCell(10, 2, 'cucumber.options.TestRunner')
-data.setCell(10, 3, 2444);
+data.setCell(10, 3, 2114);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 47 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -423,56 +453,58 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">cucumber.options.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@14f060b8)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@72c9ebfa)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("checkout functionality with valid details", "verify checkout functionality")</span>
-                <span class="method-start">424 ms</span>
+                <span class="method-start">295 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("checkout functionality by giving only fisrtname and lastname", "verify checkout functionality")</span>
-                <span class="method-start">16540 ms</span>
+                <span class="method-start">7645 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("checkout functionality by giving only fisrtname and zipcode", "verify checkout functionality")</span>
-                <span class="method-start">23461 ms</span>
+                <span class="method-start">13470 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("checkout functionality by giving only fisrtname and zipcode", "verify checkout functionality")</span>
-                <span class="method-start">31113 ms</span>
+                <span class="method-start">19461 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("checkout functionality by giving only fisrtname and zipcode", "verify checkout functionality")</span>
-                <span class="method-start">38014 ms</span>
+                <span class="method-start">25156 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("validate count after adding one item on cart", "Add to cart functionality")</span>
-                <span class="method-start">45420 ms</span>
+                <span class="method-start">31020 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("validate count after adding two item on cart", "Add to cart functionality")</span>
-                <span class="method-start">48494 ms</span>
+                <span class="method-start">33367 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("add product on cart", "Add to cart functionality")</span>
-                <span class="method-start">51137 ms</span>
+                <span class="method-start">35739 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("validate size of list in filter", "Add to cart functionality")</span>
-                <span class="method-start">57048 ms</span>
+                <span class="method-start">41321 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("validate text in filter options", "Add to cart functionality")</span>
-                <span class="method-start">59788 ms</span>
+                <span class="method-start">43436 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify remove button functionality", "Your Cart functionality")</span>
-                <span class="method-start">62235 ms</span>
+                <span class="method-start">45598 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">65175 ms</span>
+                <span class="method-start">48199 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

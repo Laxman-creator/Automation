@@ -6,4 +6,5 @@ import io.cucumber.testng.CucumberOptions;
 plugin = {"pretty","json:target/jsonReports/report.json"})
 public class TestRunner extends AbstractTestNGCucumberTests {
 
+	
 }

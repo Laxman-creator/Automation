@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import helper.BaseClass;
-import io.cucumber.java.en.Then;
 
 public class CheckOutPage extends BaseClass {
 
@@ -31,7 +30,7 @@ public void enterfirstname_last_name_and_zipcode(String string, String string2, 
 	
 	public void validatetext() {
 		WebElement elm=driver.findElement(By.xpath("//h2[normalize-space()='THANK YOU FOR YOUR ORDER']"));
-	    validateText(elm, "THANK YOU FOR YOUR ORDER");
+	    validateText(elm, "THANK YOU FOR YOUR ORDE");
 	}
 public void validate_error_message_without_giving_zipcode() {
 		WebElement elm=driver.findElement(By.xpath("//h3[normalize-space()='Error: Postal Code is required']"));
