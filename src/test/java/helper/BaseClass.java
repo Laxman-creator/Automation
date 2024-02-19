@@ -39,8 +39,7 @@ public class BaseClass {
 
 	static {
 		try {
-			FileInputStream file = new FileInputStream(
-					System.getProperty("user.dir") + "/src/test/java/resources/env.properties");
+			FileInputStream file = new FileInputStream("./src/test/java/resources/env.properties");
 			prop = new Properties();
 			prop.load(file);
 		} catch (FileNotFoundException e) {
