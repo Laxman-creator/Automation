@@ -1,7 +1,7 @@
 
 Feature: verify checkout functionality
 
- @reg
+ @sanity
   Scenario: checkout functionality with valid details
     When enter valid username "standard_user" and valid password "secret_sauce"
     And click on login button

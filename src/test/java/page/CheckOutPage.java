@@ -10,15 +10,18 @@ import helper.BaseClass;
 public class CheckOutPage extends BaseClass {
 
 	public void enterfirstname_last_name_and_zipcode(String string, String string2, String string3) {
-
+		log.info("checkout page starting");
 		driver.findElement(By.xpath("//input[@id='first-name']")).sendKeys(string);
+		log.info("entering first name");
 		driver.findElement(By.xpath("//input[@id='last-name']")).sendKeys(string2);
 		driver.findElement(By.xpath("//input[@id='postal-code']")).sendKeys(string3);
 	}
 
 	public void clickoncontinuebutton() {
+		
 		WebElement elm = driver.findElement(By.xpath("//input[@value='CONTINUE']"));
 		clickonelement(elm);
+		
 	}
 
 	public void clickOnfinishbtn() {
